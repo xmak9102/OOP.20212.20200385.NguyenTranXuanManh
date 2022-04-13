@@ -1,13 +1,19 @@
 import java.util.Scanner;
 
-public class Days {
+public class Display_date {
+
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-        int m, y, d = 0;
-        System.out.print("enter month: ");
-        m = input.nextInt();
-        System.out.print("enter year: ");
-        y = input.nextInt();
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+        int d = 0;
+        
+        System.out.print("Enter year: ");
+        int y = scanner.nextInt();
+        
+        System.out.print("Enter month: ");
+        int m = scanner.nextInt();
+        
         if(m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12) {
     		d = 31;
     	}
@@ -25,9 +31,11 @@ public class Days {
 			    d = 28;
 		   }
 		}
-	    System.out.printf(
-            "Number of days in %d/%d is : %d", m, y, d);
-        input.close();
+	    System.out.printf("Number of days in %d/%d is: %d", m, y, d);
+	    
+        scanner.close();
 		System.exit(0);
+
 	}
+
 }
