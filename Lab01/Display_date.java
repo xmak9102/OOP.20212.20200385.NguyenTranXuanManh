@@ -37,5 +37,4 @@ public class Display_date {
 		System.exit(0);
 
 	}
-
 }
