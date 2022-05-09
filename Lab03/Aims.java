@@ -1,4 +1,4 @@
-//package Lab03;
+package Lab03;
 
 public class Aims {
 
@@ -16,19 +16,16 @@ public class Aims {
 		
 		anOrder.addDigitalVideoDisc(dvd1, dvd2, dvd3);
 			
-		if(anOrder.qtyOrdered() < Cart.MAX_NUMBERS_ORDERED) {
-		System.out.println("The discs has been added");}
+		anOrder.removeDigitalVideoDisc(dvd2);
 		
-		else {System.out.println("The cart is full");}
-			
-
 		Float totalCost = (float) 0.0;
 		for (int i = 0; i<anOrder.arl.size();i++) {
 			totalCost += anOrder.arl.get(i).getCost();
 		}
-		
+
 		System.out.print("Total cost is: ");
 		System.out.println(Math.round(totalCost * 100.0) / 100.0);
+		
 		System.out.print("Total disc: ");
 		System.out.println(anOrder.qtyOrdered());		
 	}
