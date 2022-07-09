@@ -39,9 +39,11 @@ public class PainterController {
 			Circle newCircle2 = new Circle(me.getX(),
 					me.getY(), 5, Color.WHITE);
 			drawingAreaPane.getChildren().add(newCircle2);
-		}
-		
-		
-		
+		}	
+	}
+	
+	public void initialize() {
+		Rectangle r = new Rectangle(541,463);
+		drawingAreaPane.setClip(r);
 	}
 }
