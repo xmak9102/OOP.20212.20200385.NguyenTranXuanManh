@@ -1,1 +1,2 @@
-# OOP.20212.20200385.NguyenTranXuanManh
+# NguyenTranXuanManh 
+# Java Project about store management system
